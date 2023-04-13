@@ -1,0 +1,24 @@
+{
+  "name": "project",
+  "dependencies": {
+    "nanoid": "3.1.28",
+    "react": "17.0.2",
+    "react-confetti": "6.0.1",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0",
+    "babel-loader": "^7.0",
+    "babel-preset-env": "*",
+    "babel-preset-react": "*",
+    "gh-pages": "^5.0.0",
+    "webpack": "^2.0"
+  },
+  "homepage": "http://ogcodez.github.io/ogcodez.github.io",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack -w",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
+  }
+}
